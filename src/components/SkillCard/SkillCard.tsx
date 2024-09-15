@@ -17,6 +17,7 @@ const SkillCard: React.FC<SkillCardProps> = ({children}) => {
     alignItems: "center",
     justifyContent: "center",
     color: "black",
+    textWrap: "nowrap",
     [theme.breakpoints.down("sm")]: {
       width: "100%",
     },
