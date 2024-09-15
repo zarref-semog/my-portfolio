@@ -50,16 +50,16 @@ const About = () => {
           left: stackRef.current.scrollWidth,
           behavior: "smooth",
         });
-  
+
         // Após 5 segundos (metade do intervalo), rola de volta para a esquerda
         setTimeout(() => {
           stackRef.current?.scrollTo({
             left: 0, // Volta para a esquerda
             behavior: "smooth",
           });
-        }, 5000); // 5 segundos para completar a rolagem para a direita
+        }, 10000); // 5 segundos para completar a rolagem para a direita
       }, 30000); // Repete a cada 10 segundos
-  
+
       // Cleanup para limpar o intervalo quando o componente desmontar
       return () => clearInterval(scrollInterval);
     }
@@ -73,12 +73,50 @@ const About = () => {
     paddingTop: "30px",
   }))
 
+  const skills = [
+    { src: HTML, text: "HTML", height: "24px" },
+    { src: CSS, text: "CSS", height: "24px" },
+    { src: JS, text: "JavaScript", height: "24px" },
+    { src: TS, text: "TypeScript", height: "24px" },
+    { src: Dart, text: "Dart", height: "24px" },
+    { src: ReactJS, text: "ReactJS", height: "24px" },
+    { src: NextJS, text: "NextJS", height: "24px" },
+    { src: Git, text: "Git", height: "24px" },
+    { src: Flutter, text: "Flutter", height: "24px" },
+    { src: ReactJS, text: "React Native", height: "24px" },
+    { src: Axios, text: "", height: "12px" },
+    { src: Webhooks, text: "WebHooks", height: "24px" },
+    { src: NodeJS, text: "NodeJS", height: "24px" },
+    { src: Java, text: "Java", height: "24px" },
+    { src: C, text: "", height: "24px" },
+    { src: PHP, text: "", height: "24px" },
+    { src: Python, text: "Python", height: "24px" },
+    { src: ExpressJS, text: "ExpressJS", height: "24px" },
+    { src: NestJS, text: "NestJS", height: "24px" },
+    { src: SpringBoot, text: "Spring Boot", height: "24px" },
+    { src: Laravel, text: "Laravel", height: "24px" },
+    { src: Websockets, text: "WebSocket", height: "24px" },
+    { src: JWT, text: "JWT", height: "24px" },
+    { src: API, text: "REST API", height: "24px" },
+    { src: Microservices, text: "Microservices", height: "24px" },
+    { src: GraphQL, text: "GraphQL", height: "24px" },
+    { src: MySQL, text: "", height: "36px" },
+    { src: Postgres, text: "PostgreSQL", height: "24px" },
+    { src: SQLite, text: "SQLite", height: "24px" },
+    { src: Mongo, text: "MongoDB", height: "24px" },
+    { src: Redis, text: "", height: "60px" },
+    { src: Docker, text: "Docker", height: "24px" },
+    { src: Kubernetes, text: "Kubernetes", height: "24px" },
+    { src: Godot, text: "Godot", height: "24px" }
+  ];
+
+
   return (
     <>
       <StyledAbout>
         <Container maxWidth="lg">
           <Typography id="about" color="black" variant="h2" textAlign="center" pb={2}>About Me</Typography>
-          <Stack direction={{ xs: "column", sm: "row" }} spacing={2} justifyContent="center" alignItems={{ xs: "center"}}>
+          <Stack direction={{ xs: "column", sm: "row" }} spacing={2} justifyContent="center" alignItems={{ xs: "center" }}>
             <StyledCard>
               <WorkspacePremiumIcon />
               <Typography fontWeight="bold">Experience</Typography>
@@ -104,40 +142,17 @@ const About = () => {
           <Typography id="skills" variant="h2" textAlign="center" mt="20px" mb="20px">Skills</Typography>
           <StyledScrollbar ref={stackRef}>
             <Stack spacing={1} direction="row" style={{ scrollbarColor: "blue" }}>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={HTML} />HTML</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={CSS} />CSS</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={JS} />JavaScript</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={TS} />TypeScript</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Dart} />Dart</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={ReactJS} />ReactJS</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={NextJS} />NextJS</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Git} />Git</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Flutter} />Flutter</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={ReactJS} />React Native</SkillCard>
-              <SkillCard><img height={'12px'} src={Axios} /></SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Webhooks} />WebHooks</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={NodeJS} />NodeJS</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Java} />Java</SkillCard>
-              <SkillCard><img height={'24px'} src={C} /></SkillCard>
-              <SkillCard><img height={'24px'} src={PHP} /></SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Python} />Python</SkillCard>
-              <SkillCard><img height={'12px'} style={{ marginRight: "5px"}} src={ExpressJS} />ExpressJS</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={NestJS} />NestJS</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={SpringBoot} />Spring Boot</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Laravel} />Laravel</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Websockets} />WebSocket</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={JWT} />JWT</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={API} />REST API</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Microservices} />Microservices</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={GraphQL} />GraphQL</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={MySQL} />MySQL</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Postgres} />PostgreSQL</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={SQLite} />SQLite</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Mongo} />MongoDB</SkillCard>
-              <SkillCard><img height={'60px'} style={{ marginRight: "5px"}} src={Redis} /></SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Docker} />Docker</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Kubernetes} />Kubernetes</SkillCard>
-              <SkillCard><img height={'24px'} style={{ marginRight: "5px"}} src={Godot} />Godot</SkillCard>
+              {skills.map((skill, index) => (
+                <SkillCard key={index}>
+                  <img
+                    height={skill.height}
+                    style={{ marginRight: skill.text ? "5px" : "0" }} // Aplica 5px apenas se houver texto
+                    src={skill.src}
+                    alt={skill.text}
+                  />
+                  {skill.text}
+                </SkillCard>
+              ))}
             </Stack>
           </StyledScrollbar>
           <Box height="40px" />
