@@ -38,6 +38,7 @@ import Mongo from "../../../../assets/images/mongodb-icon.png";
 import Redis from "../../../../assets/images/redis-icon.png";
 import Docker from "../../../../assets/images/docker-icon.png";
 import Kubernetes from "../../../../assets/images/kubernetes-icon.png";
+import RabbitMQ from "../../../../assets/images/rabbitmq-icon.png";
 
 const About = () => {
   const stackRef = React.useRef<HTMLDivElement>(null)
@@ -99,6 +100,7 @@ const About = () => {
     { src: JWT, text: "JWT", height: "24px" },
     { src: API, text: "REST API", height: "24px" },
     { src: Microservices, text: "Microservices", height: "24px" },
+    { src: RabbitMQ, text: "", height: "12px" },
     { src: GraphQL, text: "GraphQL", height: "24px" },
     { src: MySQL, text: "", height: "36px" },
     { src: Postgres, text: "PostgreSQL", height: "24px" },
