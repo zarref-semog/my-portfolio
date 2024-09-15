@@ -1,31 +1,37 @@
-import { Box, Container, Grid, styled, Typography } from "@mui/material"
-import Avatar from "../../../../assets/images/avatar.jpg"
-import DownloadIcon from "@mui/icons-material/Download"
-import MailOutlineIcon from "@mui/icons-material/MailOutline"
-import StyledButton from "../../../../components/StyledButton/StyledButton"
-import AnimatedBackground from "../../../../components/AnimatedBackground/AnimatedBackground"
+import { Box, Container, Grid, styled, Typography } from "@mui/material";
+import Avatar from "../../../../assets/images/avatar.jpg";
+import DownloadIcon from "@mui/icons-material/Download";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import StyledButton from "../../../../components/StyledButton/StyledButton";
+import AnimatedBackground from "../../../../components/AnimatedBackground/AnimatedBackground";
+import Currilo from "../../../../assets/others/curriculo-murilo.pdf";
 
 const Hero = () => {
-
   const StyledHero = styled("div")(() => ({
     backgroundColor: "transparent",
     height: "100vh",
     display: "flex",
     alignItems: "center",
-    position: "relative",  // Para permitir que o background seja posicionado corretamente
-    overflow: "hidden",  // Evitar overflow indesejado do fundo animado
-  }))
+    position: "relative",
+    overflow: "hidden",
+  }));
 
   const StyledImg = styled("img")(({ theme }) => ({
     width: "60%",
     borderRadius: "50%",
-    border: `2px solid ${theme.palette.primary.contrastText}`
-  }))
+    border: `2px solid ${theme.palette.primary.contrastText}`,
+  }));
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = Currilo;
+    link.download = "curriculo-murilo.pdf"; // Nome do arquivo para download
+    link.click();
+  };
 
   return (
     <>
       <StyledHero>
-        {/* Plano de fundo animado cobrindo todo o conteúdo */}
         <Box position="absolute" top={0} left={0} width="100%" height="100%" zIndex={-1}>
           <AnimatedBackground />
         </Box>
@@ -46,13 +52,13 @@ const Hero = () => {
               </Typography>
               <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <StyledButton>
+                  <StyledButton onClick={handleDownload}>
                     <DownloadIcon />
                     <Typography>Download CV</Typography>
                   </StyledButton>
                 </Grid>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                  <StyledButton>
+                  <StyledButton onClick={() => (window.location.href = "mailto:murilogf012@gmail.com")}>
                     <MailOutlineIcon />
                     <Typography>Contact Me</Typography>
                   </StyledButton>
@@ -63,7 +69,7 @@ const Hero = () => {
         </Container>
       </StyledHero>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
