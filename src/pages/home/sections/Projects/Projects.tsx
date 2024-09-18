@@ -7,7 +7,7 @@ import MyClassroomProject from "../../../../assets/screenshots/my-classroom-proj
 
 const Projects = () => {
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('xs'));
 
   const StyledProjects = styled("div")(({ theme }) => ({
     backgroundColor: theme.palette.primary.main,

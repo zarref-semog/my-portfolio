@@ -1,4 +1,4 @@
-import { Box, Container, Grid, styled, Typography } from "@mui/material";
+import { Box, Container, Grid, styled, Typography, useMediaQuery, useTheme } from "@mui/material";
 import Avatar from "../../../../assets/images/avatar.jpg";
 import DownloadIcon from "@mui/icons-material/Download";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
@@ -7,6 +7,9 @@ import AnimatedBackground from "../../../../components/AnimatedBackground/Animat
 import Currilo from "../../../../assets/others/curriculo-murilo.pdf";
 
 const Hero = () => {
+  const theme = useTheme();
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('md'));
+
   const StyledHero = styled("div")(() => ({
     backgroundColor: "transparent",
     height: "100vh",
@@ -17,7 +20,7 @@ const Hero = () => {
   }));
 
   const StyledImg = styled("img")(({ theme }) => ({
-    width: "60%",
+    width: isSmallScreen ? "40%" : "60%",
     borderRadius: "50%",
     border: `2px solid ${theme.palette.primary.contrastText}`,
   }));
