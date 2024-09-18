@@ -58,8 +58,8 @@ const About = () => {
             left: 0, // Volta para a esquerda
             behavior: "smooth",
           });
-        }, 10000); // 5 segundos para completar a rolagem para a direita
-      }, 30000); // Repete a cada 10 segundos
+        }, 5000); // 5 segundos para completar a rolagem para a direita
+      }, 60000); // Repete a cada 10 segundos
 
       // Cleanup para limpar o intervalo quando o componente desmontar
       return () => clearInterval(scrollInterval);
