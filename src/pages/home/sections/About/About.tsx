@@ -128,7 +128,7 @@ const About = () => {
             <StyledCard>
               <SchoolIcon />
               <Typography fontWeight="bold">Education</Typography>
-              <Typography>Bachelors Degree</Typography>
+              <Typography>Bachelor's Degree</Typography>
               <Typography>Software Engineer</Typography>
             </StyledCard>
           </Stack>
