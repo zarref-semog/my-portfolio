@@ -18,10 +18,10 @@ const Projects = () => {
 
   // Definir os projetos
   const projects = [
+    { img: MyClassroomProject, alt: "my-classroom-project", title: "My Classroom", href: "https://github.com/zarref-semog/my-classroom", description: "A React Native application for teachers where you can manage your classrooms." },
     { img: ShoppingCartProject, alt: "shopping-cart-project", title: "Shopping Cart", href: "https://www.github.com/zarref-semog/shopping-cart", description: "A React JS application that consumes a Mercado Livre API, and displays your products with a search function." },
     { img: PokemonApiProject, alt: "pokemon-api-project", title: "Pokemon", href: "https://www.github.com/zarref-semog/pokemon-api", description: "A React JS application that consumes a Pokemon API, and allows you to favorite them." },
     { img: KanbanProject, alt: "kanban-project", title: "Kanban", href: "https://github.com/zarref-semog/kanban", description: "A Vanilla JS application that allows you to manage tasks in a kanban board." },
-    { img: MyClassroomProject, alt: "my-classroom-project", title: "My Classroom", href: "https://github.com/zarref-semog/my-classroom", description: "A React Native application for teachers where you can manage your classrooms." },
     { img: "", alt: "", title: "Parking Control", href: "https://github.com/zarref-semog/parking-control", description: "API for parking manage using Spring Boot and PostgreSQL." },
     { img: "", alt: "", title: "Day Notes", href: "https://github.com/zarref-semog/day-notes", description: "API for manage daily notes using ExpressJS and MySQL." },
     { img: "", alt: "", title: "Bitcoin Price", href: "https://github.com/zarref-semog/preco-bitcoin", description: "Flutter mobile application that shows the bitcoin price." },
