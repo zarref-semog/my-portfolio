@@ -62,8 +62,8 @@ const Projects = () => {
     { img: "", alt: "", title: "Bitcoin Price", href: "https://github.com/zarref-semog/preco-bitcoin", description: "Flutter mobile application that shows the bitcoin price.", technologies: [Dart, Flutter, API] },
     { img: "", alt: "", title: "Localiza", href: "https://github.com/zarref-semog/localiza", description: "API for car rental using ExpressJS and MongoDB.", technologies: [JS, NodeJS, Mongo, API] },
     { img: "", alt: "", title: "Consultoria", href: "https://github.com/zarref-semog/consultoria", description: "Flutter mobile application for a fictional company.", technologies: [Dart, Flutter] },
-    { img: "", alt: "", title: "User API Postgres", href: "https://github.com/zarref-semog/node-postgres", description: "API for manage users using ExpressJS and PostgreSQL.", technologies: [NodeJS, Postgres] },
-    { img: "", alt: "", title: "User API MySQL", href: "https://github.com/zarref-semog/node-mysql", description: "API for manage users using ExpressJS and MySQL.", technologies: [NodeJS, MySQL] },
+    { img: "", alt: "", title: "User API Postgres", href: "https://github.com/zarref-semog/node-postgres", description: "API for manage users using ExpressJS and PostgreSQL.", technologies: [NodeJS, Postgres, API] },
+    { img: "", alt: "", title: "User API MySQL", href: "https://github.com/zarref-semog/node-mysql", description: "API for manage users using ExpressJS and MySQL.", technologies: [NodeJS, MySQL, API] },
   ];
 
   return (
