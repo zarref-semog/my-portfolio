@@ -27,7 +27,7 @@ import NodeJS from "../../../../assets/images/node-js-icon.png";
 import Java from "../../../../assets/images/java-programming-language-icon.png";
 // import PHP from "../../../../assets/images/php-programming-language-icon.png";
 // import Python from "../../../../assets/images/python-programming-language-icon.png";
-import ExpressJS from "../../../../assets/images/express-js-icon.png";
+// import ExpressJS from "../../../../assets/images/express-js-icon.png";
 // import NestJS from "../../../../assets/images/nest-js-icon.png";
 // import Laravel from "../../../../assets/images/laravel-icon.png";
 // import GraphQL from "../../../../assets/images/graphql-icon.png";
@@ -58,12 +58,12 @@ const Projects = () => {
     { img: KanbanProject, alt: "kanban-project", title: "Kanban", href: "https://github.com/zarref-semog/kanban", description: "A Vanilla JS application that allows you to manage tasks in a kanban board.", technologies: [HTML, CSS, JS] },
     { img: "", alt: "", title: "Tractian Challenge", href: "https://github.com/zarref-semog/tractian-challenge-flutter", description: "Flutter mobile application to visualize Asset Tree.", technologies: [Dart, Flutter, API] },
     { img: "", alt: "", title: "Parking Control", href: "https://github.com/zarref-semog/parking-control", description: "API for parking manage using Spring Boot and PostgreSQL.", technologies: [Java, SpringBoot, Postgres, API] },
-    { img: "", alt: "", title: "Day Notes", href: "https://github.com/zarref-semog/day-notes", description: "API for manage daily notes using ExpressJS and MySQL.", technologies: [JS, NodeJS, ExpressJS, MySQL, API] },
+    { img: "", alt: "", title: "Day Notes", href: "https://github.com/zarref-semog/day-notes", description: "API for manage daily notes using ExpressJS and MySQL.", technologies: [JS, NodeJS, MySQL, API] },
     { img: "", alt: "", title: "Bitcoin Price", href: "https://github.com/zarref-semog/preco-bitcoin", description: "Flutter mobile application that shows the bitcoin price.", technologies: [Dart, Flutter, API] },
-    { img: "", alt: "", title: "Localiza", href: "https://github.com/zarref-semog/localiza", description: "API for car rental using ExpressJS and MongoDB.", technologies: [JS, NodeJS, ExpressJS, Mongo, API] },
+    { img: "", alt: "", title: "Localiza", href: "https://github.com/zarref-semog/localiza", description: "API for car rental using ExpressJS and MongoDB.", technologies: [JS, NodeJS, Mongo, API] },
     { img: "", alt: "", title: "Consultoria", href: "https://github.com/zarref-semog/consultoria", description: "Flutter mobile application for a fictional company.", technologies: [Dart, Flutter] },
-    { img: "", alt: "", title: "User API Postgres", href: "https://github.com/zarref-semog/node-postgres", description: "API for manage users using ExpressJS and PostgreSQL.", technologies: [NodeJS, ExpressJS, Postgres] },
-    { img: "", alt: "", title: "User API MySQL", href: "https://github.com/zarref-semog/node-mysql", description: "API for manage users using ExpressJS and MySQL.", technologies: [NodeJS, ExpressJS, MySQL] },
+    { img: "", alt: "", title: "User API Postgres", href: "https://github.com/zarref-semog/node-postgres", description: "API for manage users using ExpressJS and PostgreSQL.", technologies: [NodeJS, Postgres] },
+    { img: "", alt: "", title: "User API MySQL", href: "https://github.com/zarref-semog/node-mysql", description: "API for manage users using ExpressJS and MySQL.", technologies: [NodeJS, MySQL] },
   ];
 
   return (
