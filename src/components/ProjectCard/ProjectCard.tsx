@@ -28,7 +28,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ children, img, alt, ti
                 sx={{
                     marginBottom: "10px",
                     backgroundColor: "#6f467d",
-                    minHeight: "280px"
+                    minHeight: "300px"
                 }}
             >
                 <CardActionArea>
