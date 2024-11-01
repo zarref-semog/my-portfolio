@@ -1,4 +1,4 @@
-ngimport { Container, Stack, styled, Typography, Divider, Box } from "@mui/material";
+import { Container, Stack, styled, Typography, Divider, Box } from "@mui/material";
 import React from "react";
 import StyledCard from "../../../../components/StyledCard/StyledCard"
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
