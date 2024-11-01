@@ -90,7 +90,7 @@ const About = () => {
     { src: Axios, text: "", height: "12px" },
     { src: Webhooks, text: "WebHooks", height: "24px" },
     { src: NodeJS, text: "NodeJS", height: "24px" },
-    { src: CSharp, text: "", height: "12px" },
+    { src: CSharp, text: "", height: "24px" },
     { src: Java, text: "Java", height: "24px" },
     { src: C, text: "", height: "24px" },
     { src: PHP, text: "", height: "24px" },
