@@ -97,7 +97,7 @@ const About = () => {
     { src: Python, text: "Python", height: "24px" },
     { src: ExpressJS, text: "ExpressJS", height: "24px" },
     { src: NestJS, text: "NestJS", height: "24px" },
-    { src: ASPNet, text: "ASP.NET", height: "24px" },
+    { src: ASPNet, text: "ASP.NET", height: "30px" },
     { src: SpringBoot, text: "Spring Boot", height: "24px" },
     { src: Laravel, text: "Laravel", height: "24px" },
     { src: Websockets, text: "WebSocket", height: "24px" },
