@@ -40,7 +40,7 @@ import Docker from "../../../../assets/images/docker-icon.png";
 import Kubernetes from "../../../../assets/images/kubernetes-icon.png";
 import RabbitMQ from "../../../../assets/images/rabbitmq-icon.png";
 import CSharp from "../../../../assets/images/c-sharp-c-logo-02F17714BA-seeklogo.com.png";
-import ASPNet from "../../../../assets/images/aspnet.png"
+import ASPNet from "../../../../assets/images/aspnet.png";
 
 const About = () => {
   const stackRef = React.useRef<HTMLDivElement>(null)
