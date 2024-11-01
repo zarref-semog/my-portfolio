@@ -39,6 +39,8 @@ import Redis from "../../../../assets/images/redis-icon.png";
 import Docker from "../../../../assets/images/docker-icon.png";
 import Kubernetes from "../../../../assets/images/kubernetes-icon.png";
 import RabbitMQ from "../../../../assets/images/rabbitmq-icon.png";
+import CSharp from "../../../../assets/images/c-sharp-c-logo-02F17714BA-seeklogo.com.png";
+import ASPNet from "../../../../assets/images/pngwing.com"
 
 const About = () => {
   const stackRef = React.useRef<HTMLDivElement>(null)
@@ -88,12 +90,14 @@ const About = () => {
     { src: Axios, text: "", height: "12px" },
     { src: Webhooks, text: "WebHooks", height: "24px" },
     { src: NodeJS, text: "NodeJS", height: "24px" },
+    { src: CSharp, text: "", height: "12px" },
     { src: Java, text: "Java", height: "24px" },
     { src: C, text: "", height: "24px" },
     { src: PHP, text: "", height: "24px" },
     { src: Python, text: "Python", height: "24px" },
     { src: ExpressJS, text: "ExpressJS", height: "24px" },
     { src: NestJS, text: "NestJS", height: "24px" },
+    { src: ASPNet, text: "ASP.NET", height: "24px" },
     { src: SpringBoot, text: "Spring Boot", height: "24px" },
     { src: Laravel, text: "Laravel", height: "24px" },
     { src: Websockets, text: "WebSocket", height: "24px" },
